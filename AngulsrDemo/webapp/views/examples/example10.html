@@ -1,0 +1,19 @@
+<h2>AngularJS - AJAX</h2>
+
+<div ng-controller = "StudentController10">
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Roll No</th>
+            <th>Percentage</th>
+        </tr>
+
+        <tr ng-repeat = "student in students">
+            <td>{{ student.Name}}</td>
+            <td>{{ student.RollNo}}</td>
+            <td>{{ student.Percentage}}</td>
+        </tr>
+    </table>
+</div>
+
+<p><a href="#/">Go Back</a></p>

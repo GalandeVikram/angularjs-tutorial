@@ -1,0 +1,16 @@
+<h2>AngularJS - Dependency Injection (Provider)</h2>
+
+<div ng-controller = "CarController">
+    <p>
+        Select Maruti Car: 
+        <input type="radio" ng-model="maruti" value="hatchback"/> hatchback
+        <input type="radio" ng-model="maruti" value="sedan"/> sedan
+        <input type="radio" ng-model="maruti" value="cross"/> cross
+        
+        <button ng-click = "getMaruti(maruti)">Get Maruti</button>
+    </p>
+    <p>Result: {{result1}}</p>
+    
+</div>
+
+<p><a href="#/">Go Back</a></p>

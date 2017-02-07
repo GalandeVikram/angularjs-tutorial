@@ -1,0 +1,73 @@
+<!--<h1>Home</h1>
+<p>You're logged in!!</p>
+<p><a href="#/login">Logout</a></a></p>-->
+
+<!DOCTYPE html>
+<!--<html>
+
+    <head>
+        <meta charset="utf-8"/>
+                <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />
+        
+    </head>
+    <body ng-app>
+
+         The navigation menu will get the value of the "active" variable as a class.
+                 The $event.preventDefault() stops the page from jumping when a link is clicked. 
+        
+         Include AngularJS from Google's CDN 
+        <script src="bower_components/angular/angular.js"></script>
+    </body>
+</html>-->
+
+<nav class="{{active}}" ng-click="$event.preventDefault()">
+    <!-- When a link in the menu is clicked, we set the active variable -->
+    <a href="#" class="home" ng-click="active = 'home'">Home</a>
+    <a href="#" class="about" ng-click="active = 'about'">About</a>
+    <a href="#" class="contact" ng-click="active = 'contact'">Contact</a>
+    <a href="#" class="tutorial" ng-click="active = 'tutorial'">Tutorial</a>
+    <a href="#" class="logout" ng-click="active = 'logout'">Logout</a>
+</nav>
+
+<!-- ng-show will show an element if the value in the quotes is truthful,
+         while ng-hide does the opposite. Because the active variable is not set
+         initially, this will cause the first paragraph to be visible. -->
+
+<div class="dashboard" ng-show="active">
+    <!--            You chose <b>{{active}}</b>-->
+    <div ng-if="active === 'home'">
+        <b>AngularJS Tutorial</b>
+        <p>
+            AngularJS is a very powerful JavaScript Framework. It is used in Single Page Application (SPA) projects. It extends HTML DOM with additional attributes and makes it more responsive to user actions. AngularJS is open source, completely free, and used by thousands of developers around the world. It is licensed under the Apache license version 2.0.
+        </p>
+    </div>
+    <div ng-if="active === 'about'">
+        Vikram Galande
+        a548191
+    </div>
+    <div ng-if="active === 'tutorial'">
+        <p><a href="#/example1">AngularJS - Hello</a></p>                
+        <p><a href="#/example2">AngularJS - Directives</a></p>                
+        <p><a href="#/example3">AngularJS - Expressions</a></p>
+        <p><a href="#/example4">AngularJS - Controller</a></p>
+        <p><a href="#/example5">AngularJS - Filters</a></p>
+        <p><a href="#/example6">AngularJS - Tables</a></p>
+        <p><a href="#/example7">AngularJS - HTML DOM</a></p>
+        <p><a href="#/example8">AngularJS - FORMS</a></p>
+        <p><a href="#/example9">AngularJS - INCLUDE</a></p>
+        <p><a href="#/example10">AngularJS - AJAX</a></p>
+        <p><a href="#/example11">AngularJS - SCOPES</a></p>
+        <p><a href="#/example12">AngularJS - SERVICE & DI (Service, Factory, Value and Constant)</a></p>
+        <p><a href="#/example13">AngularJS - DI (Provider)</a></p>
+        <p><a href="#/example14">AngularJS - CUSTOM DIRECTIVES</a></p>
+        <p><a href="#/example15">AngularJS - i18</a></p>
+        <p><a href="#/chartApp">Chart App</a></p>
+        <p><a href="#/advancedAngular">Advanced AngularJS</a></p>
+    </div>
+    <div ng-if="active === 'contact'">
+        Atos India Pvt Ltd
+    </div>
+    <div ng-if="active === 'logout'">
+        <p><a href="#/login">Logout</a></p>
+    </div>
+</div>

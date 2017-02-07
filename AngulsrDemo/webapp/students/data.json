@@ -1,0 +1,22 @@
+[
+    {
+        "Name": "Vikram Galande",
+        "RollNo": 101,
+        "Percentage": "80%"
+    },
+    {
+        "Name": "Shantanu Kulkarni",
+        "RollNo": 201,
+        "Percentage": "90%"
+    },
+    {
+        "Name": "Amit Kothari",
+        "RollNo": 191,
+        "Percentage": "95%"
+    },
+    {
+        "Name": "Kedar Joshi",
+        "RollNo": 111,
+        "Percentage": "97%"
+    }
+]

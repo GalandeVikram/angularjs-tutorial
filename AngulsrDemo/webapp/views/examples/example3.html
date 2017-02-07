@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>AngularJS Expressions</title>
+    </head>
+    <body>
+        <h1>Sample Expressions</h1>
+        <div ng-init = "quantity = 1;cost = 300; student = {firstname:'Hrithik',lastname:'Roshan',rollno:101}; marks = [80,90,75,79,60]">
+            <p>Hello {{student.firstname + " " + student.lastname}}!</p>
+            <p>Expense on Books : {{cost * quantity}} Rs</p>
+            <p>Roll No: {{student.rollno}}</p>
+            <p>Marks(Math): {{marks[3]}}</p>
+        </div>
+        <p><a href="#/">Go Back</a></p>
+    </body>
+</html>
